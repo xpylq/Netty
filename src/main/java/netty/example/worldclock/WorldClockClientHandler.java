@@ -13,16 +13,16 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.worldclock;
+package netty.example.worldclock;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.example.worldclock.WorldClockProtocol.Continent;
-import io.netty.example.worldclock.WorldClockProtocol.LocalTime;
-import io.netty.example.worldclock.WorldClockProtocol.LocalTimes;
-import io.netty.example.worldclock.WorldClockProtocol.Location;
-import io.netty.example.worldclock.WorldClockProtocol.Locations;
+import netty.example.worldclock.WorldClockProtocol.Continent;
+import netty.example.worldclock.WorldClockProtocol.LocalTime;
+import netty.example.worldclock.WorldClockProtocol.LocalTimes;
+import netty.example.worldclock.WorldClockProtocol.Location;
+import netty.example.worldclock.WorldClockProtocol.Locations;
 
 import java.util.ArrayList;
 import java.util.Collection;

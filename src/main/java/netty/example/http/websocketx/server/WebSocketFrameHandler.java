@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.http.websocketx.server;
+package netty.example.http.websocketx.server;
 
 import java.util.Locale;
 

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.sctp.multihoming;
+package netty.example.sctp.multihoming;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -24,7 +24,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.sctp.SctpChannel;
 import io.netty.channel.sctp.SctpServerChannel;
 import io.netty.channel.sctp.nio.NioSctpServerChannel;
-import io.netty.example.sctp.SctpEchoServerHandler;
+import netty.example.sctp.SctpEchoServerHandler;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 

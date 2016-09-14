@@ -13,7 +13,7 @@
  * the License.
  */
 
-package io.netty.example.redis;
+package netty.example.redis;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;

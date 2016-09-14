@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package io.netty.example.http2.tiles;
+package netty.example.http2.tiles;
 
 import static io.netty.handler.codec.http.HttpHeaderNames.CONNECTION;
 import static io.netty.handler.codec.http.HttpUtil.isKeepAlive;

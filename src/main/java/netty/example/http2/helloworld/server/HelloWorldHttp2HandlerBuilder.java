@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package io.netty.example.http2.helloworld.server;
+package netty.example.http2.helloworld.server;
 
 import io.netty.handler.codec.http2.AbstractHttp2ConnectionHandlerBuilder;
 import io.netty.handler.codec.http2.Http2ConnectionDecoder;

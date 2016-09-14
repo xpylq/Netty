@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.http.snoop;
+package netty.example.http.snoop;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

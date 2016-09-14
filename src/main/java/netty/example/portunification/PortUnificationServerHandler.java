@@ -13,15 +13,15 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.portunification;
+package netty.example.portunification;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPipeline;
-import io.netty.example.factorial.BigIntegerDecoder;
-import io.netty.example.factorial.FactorialServerHandler;
-import io.netty.example.factorial.NumberEncoder;
-import io.netty.example.http.snoop.HttpSnoopServerHandler;
+import netty.example.factorial.BigIntegerDecoder;
+import netty.example.factorial.FactorialServerHandler;
+import netty.example.factorial.NumberEncoder;
+import netty.example.http.snoop.HttpSnoopServerHandler;
 import io.netty.handler.codec.ByteToMessageDecoder;
 import io.netty.handler.codec.compression.ZlibCodecFactory;
 import io.netty.handler.codec.compression.ZlibWrapper;

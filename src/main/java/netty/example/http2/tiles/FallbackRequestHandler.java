@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package io.netty.example.http2.tiles;
+package netty.example.http2.tiles;
 
 import static io.netty.buffer.Unpooled.copiedBuffer;
 import static io.netty.buffer.Unpooled.unreleasableBuffer;

@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.http.upload;
+package netty.example.http.upload;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;

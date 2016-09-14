@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package io.netty.example.file;
+package netty.example.file;
 
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;

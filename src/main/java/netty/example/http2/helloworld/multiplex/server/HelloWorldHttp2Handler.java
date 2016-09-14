@@ -13,7 +13,7 @@
  * the License.
  */
 
-package io.netty.example.http2.helloworld.multiplex.server;
+package netty.example.http2.helloworld.multiplex.server;
 
 import static io.netty.buffer.Unpooled.copiedBuffer;
 import static io.netty.buffer.Unpooled.unreleasableBuffer;

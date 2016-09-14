@@ -21,7 +21,7 @@
  * Protocol Negotiation (NPN) for OpenJDK 7 is required. NPN allows the application layer to negotiate which
  * protocol, SPDY or HTTP, to use.
  * <p>
- * To start, run {@link io.netty.example.spdy.server.SpdyServer} with the JVM parameter:
+ * To start, run {@link netty.example.spdy.server.SpdyServer} with the JVM parameter:
  * {@code java -Xbootclasspath/p:<path_to_npn_boot_jar> ...}.
  * The "path_to_npn_boot_jar" is the path on the file system for the NPN Boot Jar file which can be downloaded from
  * Maven at coordinates org.mortbay.jetty.npn:npn-boot. Different versions applies to different OpenJDK versions.
@@ -37,4 +37,4 @@
  * <a href="http://en.wikipedia.org/wiki/SPDY#Browser_support_and_usage">SPDY enabled web browser</a> by navigating
  * to <a href="https://localhost:8443/">https://localhost:8443/</a>
  */
-package io.netty.example.spdy.server;
+package netty.example.spdy.server;

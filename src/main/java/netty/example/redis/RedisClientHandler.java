@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package io.netty.example.redis;
+package netty.example.redis;
 
 import io.netty.buffer.ByteBufUtil;
 import io.netty.channel.ChannelDuplexHandler;

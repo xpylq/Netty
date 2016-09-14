@@ -13,7 +13,7 @@
  * the License.
  */
 
-package io.netty.example.http2.helloworld.server;
+package netty.example.http2.helloworld.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
@@ -32,7 +32,7 @@ import io.netty.util.CharsetUtil;
 
 import static io.netty.buffer.Unpooled.copiedBuffer;
 import static io.netty.buffer.Unpooled.unreleasableBuffer;
-import static io.netty.example.http2.Http2ExampleUtil.UPGRADE_RESPONSE_HEADER;
+import static netty.example.http2.Http2ExampleUtil.UPGRADE_RESPONSE_HEADER;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 
 /**

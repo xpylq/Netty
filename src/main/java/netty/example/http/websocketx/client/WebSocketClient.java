@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.http.websocketx.client;
+package netty.example.http.websocketx.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
@@ -47,7 +47,7 @@ import java.net.URI;
  * <p>
  * In order to run this example you need a compatible WebSocket server.
  * Therefore you can either start the WebSocket server from the examples
- * by running {@link io.netty.example.http.websocketx.server.WebSocketServer}
+ * by running {@link netty.example.http.websocketx.server.WebSocketServer}
  * or connect to an existing WebSocket server such as
  * <a href="http://www.websocket.org/echo.html">ws://echo.websocket.org</a>.
  * <p>

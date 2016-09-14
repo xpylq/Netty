@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.netty.example.udt.echo.bytes;
+package netty.example.udt.echo.bytes;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

@@ -14,11 +14,11 @@
  * under the License.
  */
 
-package io.netty.example.http2.tiles;
+package netty.example.http2.tiles;
 
 import static io.netty.buffer.Unpooled.EMPTY_BUFFER;
-import static io.netty.example.http2.Http2ExampleUtil.firstValue;
-import static io.netty.example.http2.Http2ExampleUtil.toInt;
+import static netty.example.http2.Http2ExampleUtil.firstValue;
+import static netty.example.http2.Http2ExampleUtil.toInt;
 import static io.netty.handler.codec.http.HttpHeaderNames.CONTENT_TYPE;
 import static io.netty.handler.codec.http.HttpUtil.setContentLength;
 import static io.netty.handler.codec.http.HttpResponseStatus.BAD_REQUEST;
