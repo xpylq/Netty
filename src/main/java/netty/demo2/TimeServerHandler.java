@@ -19,6 +19,7 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
         Calendar calendar = Calendar.getInstance();
         byteBuf.writeInt(calendar.get(Calendar.HOUR_OF_DAY));
         final ChannelFuture channelFuture = ctx.writeAndFlush(byteBuf);
+        //因为写入的动作是异步进行的,这里需要关闭和客户端的连接,因此需要添加写入完成事件,等待写入操作完成后再关闭连接
         channelFuture.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {
