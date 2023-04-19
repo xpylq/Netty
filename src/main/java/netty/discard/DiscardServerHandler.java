@@ -4,6 +4,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
+import io.netty.util.ReferenceCountUtil;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -19,14 +20,15 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter {
             String content = in.toString(CharsetUtil.UTF_8);
             log.info("discard 服务端接收到的数据: {}", content);
             //这里将客户端的信息再返回给客户端
-            //这里的write不会直接将数据传输，需要调用flush方法，另外如果write完后，对应的obj会被release,这个是在write方法内部进行release的
-            //因此不需要在finally里再次release
+            // ctx.write()方法，不会直接将消息发送出去，而是保存到内部缓存结构中
+            // 另外需要注意的是，当调用ctx.write()方法时，netty内部会自动将写入的msg对象release了，因此无需显示release
             ctx.write(msg);
+            // 只有当调用ctx.flush()方法的时候，才会真正的将所有缓存的需要发送的内容发送出去
             ctx.flush();
         } finally {
-            //ReferenceCountUtil.release(msg);
-            //这里也可以改成
-            //in.release();
+            // ReferenceCountUtil.release(msg);
+            // ReferenceCountUtil.release(msg)也可以用下面的in.release()代替
+            // in.release();
         }
 
     }
