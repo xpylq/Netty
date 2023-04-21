@@ -17,8 +17,9 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
         ByteBuf byteBuf = (ByteBuf) msg;
         try {
             long time = byteBuf.readLong();
-            log.info("time client: {}", time);
+            log.info("TimeClientHandler: 接收到数据{}", time);
         } finally {
+            ctx.close();
             ReferenceCountUtil.release(msg);
         }
     }
