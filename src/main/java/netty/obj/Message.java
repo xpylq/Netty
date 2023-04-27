@@ -1,4 +1,4 @@
-package netty.demo3;
+package netty.obj;
 
 /**
  * Created by hzyouzhihao on 2016/9/12.

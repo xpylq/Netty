@@ -1,4 +1,4 @@
-package netty.demo3;
+package netty.obj;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Created by hzyouzhihao on 2016/9/12.
- * 解码器
+ * 解码器: 将二进制数组解码成Message对象
  */
 public class MessageDecoder extends ReplayingDecoder<Void> {
 

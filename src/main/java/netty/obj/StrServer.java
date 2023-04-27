@@ -1,4 +1,4 @@
-package netty.demo3;
+package netty.obj;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -7,6 +7,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
+ * 服务端增加编解码器，
+ * 1. 服务端接收到客户端发送的二进制数组，
+ * 2. 通过MessageDecoder解码器，将二进制数组解码成Message实体对象，再进行后续处理
  * Created by hzyouzhihao on 2016/9/12.
  */
 public class StrServer {
