@@ -1,4 +1,4 @@
-package netty.obj;
+package netty.obj.model;
 
 /**
  * Created by hzyouzhihao on 2016/9/12.

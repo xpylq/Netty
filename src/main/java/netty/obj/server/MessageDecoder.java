@@ -1,10 +1,11 @@
-package netty.obj;
+package netty.obj.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ReplayingDecoder;
 
 import java.util.List;
+import netty.obj.model.Message;
 
 /**
  * Created by hzyouzhihao on 2016/9/12.

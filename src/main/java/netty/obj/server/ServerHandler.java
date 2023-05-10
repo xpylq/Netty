@@ -1,10 +1,11 @@
-package netty.obj;
+package netty.obj.server;
 
 import com.alibaba.fastjson2.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.ReferenceCountUtil;
 import lombok.extern.slf4j.Slf4j;
+import netty.obj.model.Message;
 
 /**
  * Created by hzyouzhihao on 2016/9/12.
